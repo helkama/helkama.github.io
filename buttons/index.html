@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<script>
+
+function play(){
+var audio = document.getElementById("audio");
+audio.play();
+
+}
+function stop(){
+  var audio = document.getElementById("audio");
+  audio.pause();
+  audio.currentTime = 0;
+}
+</script>
+<body>
+
+  <input type="button" value="press" onclick="play()">
+  <input type="button" value="stop" onclick="stop()"
+  <audio id="audio" src="https://archive.org/download/testmp3testfile/mpthreetest.mp3"></audio>
+<br>
+Coming soon :D
+</body>
+</html>
