@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
 
+#square {
+	width: 10px;
+	height: 10px;
+	background-color: coral;
+
+}
+</style>
 </head>
 <script>
-
+/*
+function wait(ms)
+{
+var d = new Date();
+var d2 = null;
+do { d2 = new Date(); }
+while(d2-d < ms); */
+}
 function play(){
 var audio = document.getElementById("audio");
 audio.play();
+
 
 }
 function stop(){
@@ -15,13 +31,23 @@ function stop(){
   audio.pause();
   audio.currentTime = 0;
 }
+function colorchange(){
+document.getElementById("square").style.backgroundColor = "lightblue";
+
+}
 </script>
 <body>
 
   <input type="button" value="press" onclick="play()">
-  <input type="button" value="stop" onclick="stop()"
-  <audio id="audio" src="https://archive.org/download/testmp3testfile/mpthreetest.mp3"></audio>
+  <input type="button" value="stop" onclick="stop()">
+  <input type="button" value="color" onclick="colorchange()">
+  <audio id="audio" src="https://my.mixtape.moe/waxwqz.wav"></audio>
 <br>
 Coming soon :D
+<br>
+<div id="square">
+
+</div>
+
 </body>
 </html>
